@@ -20,7 +20,7 @@ dependencies: [
 To use UIRouter in your app, you can create instances of the Router view, specifying the presentation style, the destination view, and the label view that triggers the navigation. For example:
 
 ```swift
-Router(presentationStyle: .push, destination: DetailView()) {
+UIRouter(presentationStyle: .push, destination: DetailView()) {
     Text("Show Details")
 }
 ```
@@ -31,14 +31,14 @@ UIRouter also provides a number of convenience functions to make it easier to us
 ### Full Screen 
 
 ```swift
-Router(presentationStyle: .present(isPresented: $showFullScreen), destination: DestinationExample()) {
+UIRouter(presentationStyle: .present(isPresented: $showFullScreen), destination: DestinationExample()) {
     Text("Show Full Screen")
 }
 ```
 ### Push Navigation 
 
 ```swift
-Router(presentationStyle: .push, destination: DestinationExample()) {
+UIRouter(presentationStyle: .push, destination: DestinationExample()) {
     Text("Show Push Navigation")
 }
 ```
@@ -46,14 +46,14 @@ Router(presentationStyle: .push, destination: DestinationExample()) {
 ### Sheet 
 
 ```swift
-Router(presentationStyle: .sheet(isPresented: $showSheet), destination: DestinationExample()) {
+UIRouter(presentationStyle: .sheet(isPresented: $showSheet), destination: DestinationExample()) {
     Text("Show Sheet")
 }
 ```
 ### Bottom Sheet
 
 ```swift
-Router(presentationStyle: .bottomSheet(isPresented: $showBottomSheet), destination: DestinationExample()) {
+UIRouter(presentationStyle: .bottomSheet(isPresented: $showBottomSheet), destination: DestinationExample()) {
     Text("Show Bottom Sheet")
 }
 ```
