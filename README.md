@@ -10,7 +10,7 @@ You can install UIRouter using Swift Package Manager. Simply add the following d
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/UIRouter.git", from: "1.0.0")
+    .package(url: "https://github.com/ReenadGh/UIRouter", from: "1.0.0")
 ]
 ```
 
